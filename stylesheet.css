@@ -1,0 +1,77 @@
+
+@font-face {
+  font-family: ubuntuLight;
+  src: url(Ubuntu-Light.ttf);
+}
+@font-face {
+  font-family: ubuntu;
+  src: url(Ubuntu-Regular.ttf);
+}
+body {
+  background-image: url("bg.jpg");
+}
+
+h1 {
+  color: navy;
+  text-align: center;
+  margin-left: 20px;
+  font-family: ubuntu;
+}
+
+.topDiv {
+  border: 5px outset grey;
+  background-color: #8f8c8c;
+  flex-wrap: nowrap;	
+  width: 1200px;
+  margin: auto;
+  allign-items: flex-start;
+}
+.midDiv {
+  border: 5px outset grey;
+  background-color: #8f8c8c;
+  flex-wrap: nowrap;	
+  width: 1200px;
+  margin: auto;
+  allign-items: flex-start;
+}
+
+/* i stole this from the internet lol */
+/* https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+   font-size: 1em;
+   color: #000;
+   text-align: center;
+   font-family: ubuntuLight;
+}
+
+p {
+  font-family: ubuntuLight;
+  text-align: center;
+}
